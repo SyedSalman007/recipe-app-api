@@ -10,7 +10,8 @@ from django.test import Client
 class AdminSiteTests(TestCase):
     """Tests for Django admin."""
 
-    def setUp(self):  # camel cases is must here else the function will not be identified
+    def setUp(self):  # camel cases is must here else the
+        #function will not be identified
         """Create user and client."""
         self.client = Client()
         self.admin_user = get_user_model().objects.create_superuser(
